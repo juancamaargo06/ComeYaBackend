@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.2",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "mysql": "^2.18.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.26"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4"
+  },
+  "scripts": {
+    "dev": "tsx src/infrastructure/server.ts",
+    "dev:frontend": "vite --config vite.config.ts",
+    "build:frontend": "vite build --config vite.config.ts",
+    "start": "node src/infrastructure/server.ts"
+  }
+}
